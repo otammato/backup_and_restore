@@ -97,6 +97,7 @@ AWS Protected Resources are a set of AWS resources that have additional security
 
 <img width="1184" alt="Screenshot 2023-03-18 at 20 38 41" src="https://user-images.githubusercontent.com/104728608/226137941-fa06d93f-eb56-4050-8bde-d72ed56486f2.png">
 
+<img width="1116" alt="Screenshot 2023-03-18 at 20 40 21" src="https://user-images.githubusercontent.com/104728608/226138139-9ab1f7a7-afd5-4074-a7a1-a96d099f5e10.png">
 
 
 
