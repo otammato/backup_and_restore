@@ -2,7 +2,7 @@
 
 [ AWS Backup, AWS RDS, AWS EC2 ] Backup and recovery of an RDS MySQL instance using AWS Backup
 
-<img width="1195" alt="Screenshot 2023-03-18 at 18 46 38" src="https://user-images.githubusercontent.com/104728608/226130117-c8064b7e-bed6-46b6-a2c1-783f19ce7622.png">
+<img width="1309" alt="Screenshot 2023-03-18 at 18 55 46" src="https://user-images.githubusercontent.com/104728608/226130357-c209ea24-b8f4-4906-ac48-b97c92e6658b.png">
 
 <img width="1223" alt="Screenshot 2023-03-18 at 18 54 30" src="https://user-images.githubusercontent.com/104728608/226130291-c479407a-4e05-40c5-bee6-dbd89ee5c16e.png">
 
@@ -15,5 +15,6 @@
 <img width="674" alt="Screenshot 2023-03-18 at 18 44 44" src="https://user-images.githubusercontent.com/104728608/226130110-54f1b164-1e46-4311-88e9-22cd647f4713.png">
 
 <img width="668" alt="Screenshot 2023-03-18 at 18 43 26" src="https://user-images.githubusercontent.com/104728608/226130096-435f5e99-d0e9-4660-bd45-e0aa2841218e.png">
+
 
 
