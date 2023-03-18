@@ -26,11 +26,11 @@ sudo systemctl start mariadb
 ```
 <img width="891" alt="Screenshot 2023-03-18 at 19 16 43" src="https://user-images.githubusercontent.com/104728608/226131747-bae99df2-ce40-4cb1-8420-fd9b1b32be29.png">
 
+<img width="910" alt="Screenshot 2023-03-18 at 19 06 54" src="https://user-images.githubusercontent.com/104728608/226131194-63e309e4-9323-4ef8-84d2-94ed8508c5f8.png">
+
 ```
 mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
 ```
-
-<img width="910" alt="Screenshot 2023-03-18 at 19 06 54" src="https://user-images.githubusercontent.com/104728608/226131194-63e309e4-9323-4ef8-84d2-94ed8508c5f8.png">
 
 <img width="673" alt="Screenshot 2023-03-18 at 18 44 23" src="https://user-images.githubusercontent.com/104728608/226130114-f49dfe3d-45a9-46d1-83d1-43369554255f.png">
 
