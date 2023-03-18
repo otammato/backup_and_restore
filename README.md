@@ -75,6 +75,9 @@ AWS Backup Plan is a service that allows you to create and manage backup policie
 AWS Protected Resources are a set of AWS resources that have additional security controls applied to them to protect against accidental or malicious deletion, modification, or encryption. These controls include write protection, deletion protection, and versioning. AWS Protected Resources are available for Amazon S3 buckets and DynamoDB tables.
 <br><br>
 
+<img width="1151" alt="Screenshot 2023-03-18 at 19 47 30" src="https://user-images.githubusercontent.com/104728608/226135255-8f5e4232-9574-4e9a-afb7-155c6ba5fc36.png">
+
+<img width="715" alt="Screenshot 2023-03-18 at 19 51 42" src="https://user-images.githubusercontent.com/104728608/226135261-7be01c6d-58b1-4ef5-9161-6d2c9fb56d60.png">
 
 
 
