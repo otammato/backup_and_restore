@@ -31,6 +31,43 @@ sudo systemctl start mariadb
 ```
 mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
 ```
+<img width="810" alt="Screenshot 2023-03-18 at 19 29 03" src="https://user-images.githubusercontent.com/104728608/226133184-85f44852-bc7b-45bf-bd05-2cb1cb1d76bb.png">
+
+```
+CREATE DATABASE test_database;
+
+USE test_database;
+```
+<img width="829" alt="Screenshot 2023-03-18 at 19 32 41" src="https://user-images.githubusercontent.com/104728608/226133577-164aa199-5bd1-4c8f-b687-e604a6406622.png">
+
+```
+CREATE TABLE mytable (
+    number TINYINT(1),
+    name VARCHAR(255),
+    surname VARCHAR(255)
+);
+
+INSERT INTO mytable (number, name, surname)
+VALUES 
+(0, 'John', 'Doe'),
+(1, 'Jane', 'Smith'),
+(0, 'Bob', 'Johnson'),
+(1, 'Mary', 'Brown'),
+(0, 'Tom', 'Wilson'),
+(1, 'Emily', 'Davis'),
+(0, 'Mike', 'Jones'),
+(1, 'Sarah', 'Clark'),
+(0, 'Chris', 'Lee'),
+(1, 'Kelly', 'Taylor');
+![image](https://user-images.githubusercontent.com/104728608/226133748-cf66866d-ac07-4323-a1f6-035d4ded892f.png)
+```
+```
+SELECT * FROM mytable;
+```
+<img width="648" alt="Screenshot 2023-03-18 at 19 39 02" src="https://user-images.githubusercontent.com/104728608/226133818-d640bb59-8741-41b2-a5b9-e01cd89b6837.png">
+
+
+
 
 <img width="673" alt="Screenshot 2023-03-18 at 18 44 23" src="https://user-images.githubusercontent.com/104728608/226130114-f49dfe3d-45a9-46d1-83d1-43369554255f.png">
 
