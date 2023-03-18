@@ -11,6 +11,23 @@
 ```
 ssh -i "test_delete.pem" ec2-user@ec2-34-202-234-54.compute-1.amazonaws.com
 ```
+```
+#  this command updates all packages to the latest version
+sudo yum update -y 
+
+# this command installs MySQL server on your machine, it also creates a systemd service
+sudo yum install -y mariadb-server
+
+# this command enables the service created in previous step
+sudo systemctl enable mariadb
+
+# this command starts the MySQL server service on your Linux instance
+sudo systemctl start mariadb
+```
+<img width="891" alt="Screenshot 2023-03-18 at 19 16 43" src="https://user-images.githubusercontent.com/104728608/226131747-bae99df2-ce40-4cb1-8420-fd9b1b32be29.png">
+
+
+<img width="910" alt="Screenshot 2023-03-18 at 19 06 54" src="https://user-images.githubusercontent.com/104728608/226131194-63e309e4-9323-4ef8-84d2-94ed8508c5f8.png">
 
 <img width="673" alt="Screenshot 2023-03-18 at 18 44 23" src="https://user-images.githubusercontent.com/104728608/226130114-f49dfe3d-45a9-46d1-83d1-43369554255f.png">
 
