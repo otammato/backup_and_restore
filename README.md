@@ -65,6 +65,17 @@ VALUES
 SELECT * FROM mytable;
 ```
 <img width="648" alt="Screenshot 2023-03-18 at 19 39 02" src="https://user-images.githubusercontent.com/104728608/226133818-d640bb59-8741-41b2-a5b9-e01cd89b6837.png">
+<br><br>
+AWS Backup Vault, AWS Backup Plan, and AWS Protected Resources are all AWS services related to data protection and recovery, but they have different functionalities.
+<br>
+AWS Backup Vault is a logical container that allows you to store and manage backups of your AWS resources, such as EC2 instances, RDS databases, and EBS volumes. It provides centralized backup management, retention policies, and access control for multiple resources.
+<br>
+AWS Backup Plan is a service that allows you to create and manage backup policies for your AWS resources. It enables you to define backup schedules, retention periods, and backup destinations, including AWS Backup Vaults. AWS Backup Plan also supports cross-region and cross-account backup and provides a centralized dashboard for backup monitoring and management.
+<br>
+AWS Protected Resources are a set of AWS resources that have additional security controls applied to them to protect against accidental or malicious deletion, modification, or encryption. These controls include write protection, deletion protection, and versioning. AWS Protected Resources are available for Amazon S3 buckets and DynamoDB tables.
+<br><br>
+
+
 
 
 
