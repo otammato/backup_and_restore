@@ -8,6 +8,10 @@
 
 <img width="1150" alt="Screenshot 2023-03-18 at 19 02 24" src="https://user-images.githubusercontent.com/104728608/226130726-ceb1f3ac-5e5b-472a-b321-111621ff5175.png">
 
+```
+ssh -i "test_delete.pem" ec2-user@ec2-34-202-234-54.compute-1.amazonaws.com
+```
+
 <img width="673" alt="Screenshot 2023-03-18 at 18 44 23" src="https://user-images.githubusercontent.com/104728608/226130114-f49dfe3d-45a9-46d1-83d1-43369554255f.png">
 
 <img width="653" alt="Screenshot 2023-03-18 at 18 45 07" src="https://user-images.githubusercontent.com/104728608/226130111-f6bdb408-04c7-402c-b0e5-8740764bc0c7.png">
