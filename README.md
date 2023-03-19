@@ -57,7 +57,7 @@ Let's assume that entries with "0" were deleted or table dropped by mistake
 ```
 DELETE FROM mytable WHERE number=0;
 
-DROP TABLE mytable
+DROP TABLE mytable;
 ```
 <img width="719" alt="Screenshot 2023-03-18 at 21 27 01" src="https://user-images.githubusercontent.com/104728608/226141016-1c5923a4-a4be-4739-8b08-47feec5ad507.png">
 
