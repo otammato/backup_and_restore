@@ -122,6 +122,7 @@ sudo systemctl start mariadb
 </details>
 
 <details markdown=1><summary markdown="span">Create a database</summary>
+
 ### 2.5. Connect to the RDS instance
 
 ```
@@ -171,6 +172,7 @@ SELECT * FROM mytable;
 </details>
 
 <details markdown=1><summary markdown="span">Create a backup</summary>
+
 ### 2.6. AWS Backup
 
 <br>
@@ -197,12 +199,14 @@ AWS Protected Resources are a set of AWS resources that have additional security
 </details>
 
 <details markdown=1><summary markdown="span">Imitate a fallover</summary>
+
 ### 2.8. Imitate unwanted changes to the database
 
 <img width="680" alt="Screenshot 2023-03-18 at 20 16 17" src="https://user-images.githubusercontent.com/104728608/226136279-ce983fb7-ba57-4e01-91f4-4df8faf93387.png">
 </details>
 
 <details markdown=1><summary markdown="span">Restore the RDS instance with the database</summary>
+
 ### 2.9. Launch a restore job from the backup vault
 
 <img width="1156" alt="Screenshot 2023-03-18 at 20 20 33" src="https://user-images.githubusercontent.com/104728608/226136672-ac26bcc2-cc98-4fc3-a7d3-c308c3a460a0.png">
