@@ -158,6 +158,8 @@ SELECT * FROM mytable;
 ```
 <img width="648" alt="Screenshot 2023-03-18 at 19 39 02" src="https://user-images.githubusercontent.com/104728608/226133818-d640bb59-8741-41b2-a5b9-e01cd89b6837.png">
 
+<br><br>
+
 ### 2.6. AWS Backup
 
 <br><br>
