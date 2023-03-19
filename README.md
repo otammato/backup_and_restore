@@ -42,7 +42,14 @@ VALUES
 <br><br>
 
 ### 1.3. Create a backup file with mysqldump command
+
+```
+mysqldump -h restored-db-instance.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin test_database mytable -p > backupfile.sql
+```
+
 <img width="1090" alt="Screenshot 2023-03-18 at 21 32 03" src="https://user-images.githubusercontent.com/104728608/226141222-1e8b63d1-e04d-4a00-ac8a-1f0c37a1be62.png">
+
+<br><br>
 
 ### 1.4. Fallover<br> 
 Let's assume that entries with "0" were deleted by mistake
