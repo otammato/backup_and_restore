@@ -39,6 +39,7 @@ VALUES
 
 <img width="600" alt="Screenshot 2023-03-19 at 10 52 06" src="https://user-images.githubusercontent.com/104728608/226170561-b26eea6f-7513-4e99-9ee3-2d97d89f9fd9.png">
 
+<br><br>
 
 ### 1.3. Create a backup file with mysqldump command
 <img width="1090" alt="Screenshot 2023-03-18 at 21 32 03" src="https://user-images.githubusercontent.com/104728608/226141222-1e8b63d1-e04d-4a00-ac8a-1f0c37a1be62.png">
