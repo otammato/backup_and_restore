@@ -1,6 +1,6 @@
-# backup_and_restore
+# backup_rds
 
-[ AWS Backup, AWS RDS, AWS EC2, MySQL ] Backup and restore of an RDS MySQL instance 
+[ AWS Backup, AWS RDS, AWS EC2, MySQL ] Backup and recovery of an RDS MySQL instance 
 
 <br>
 
@@ -52,7 +52,7 @@ mysqldump -h restored-db-instance.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u ad
 <br><br>
 
 ### 1.4. Fallover<br> 
-Let's assume that entries with "0" were deleted by mistake
+Let's assume that entries with "0" were deleted or table dropped by mistake
 
 ```
 DELETE FROM mytable WHERE number=0;
