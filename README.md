@@ -78,7 +78,7 @@ mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p t
 ---
 
 <br><br><br>
-## 2. Production-wise cloud-based backup with AWS Backup
+## 2. Production-wise cloud-based backup and restore with AWS Backup
 
 ### 2.1. Create an EC2 instance
 <img width="700" alt="Screenshot 2023-03-18 at 18 55 46" src="https://user-images.githubusercontent.com/104728608/226130357-c209ea24-b8f4-4906-ac48-b97c92e6658b.png">
