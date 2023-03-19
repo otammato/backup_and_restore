@@ -93,7 +93,7 @@ mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p t
 ### 2.1.2. Create an RDS instance
 <img width="700" alt="Screenshot 2023-03-18 at 18 54 30" src="https://user-images.githubusercontent.com/104728608/226130291-c479407a-4e05-40c5-bee6-dbd89ee5c16e.png">
 
-### 2.1.3. Adjust the inbound and outbound rules to provide bi-directional acess for both instances
+### 2.1.3. Make sure the security group rules provide access to the RDS instance
 
 <img width="700" alt="Screenshot 2023-03-18 at 19 02 24" src="https://user-images.githubusercontent.com/104728608/226130726-ceb1f3ac-5e5b-472a-b321-111621ff5175.png">
 
