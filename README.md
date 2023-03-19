@@ -1,7 +1,6 @@
 # backup_and_restore
 
-<details markdown=1><summary markdown="span">Script</summary>
-</details>
+
 
 [ AWS Backup, AWS RDS, AWS EC2, MySQL ] Backup and restore of MySQL database
 
@@ -83,8 +82,10 @@ mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p t
 ---
 
 <br><br><br>
+
 ## 2. Production-wise cloud-based backup and restore with AWS Backup
 
+<details markdown=1><summary markdown="span">Create and connect instances</summary>
 ### 2.1. Create an EC2 instance
 <img width="700" alt="Screenshot 2023-03-18 at 18 55 46" src="https://user-images.githubusercontent.com/104728608/226130357-c209ea24-b8f4-4906-ac48-b97c92e6658b.png">
 
@@ -117,7 +118,9 @@ sudo systemctl enable mariadb
 sudo systemctl start mariadb
 ```
 <img width="891" alt="Screenshot 2023-03-18 at 19 16 43" src="https://user-images.githubusercontent.com/104728608/226131747-bae99df2-ce40-4cb1-8420-fd9b1b32be29.png">
+</details>
 
+<details markdown=1><summary markdown="span">Create a database</summary>
 ### 2.5. Connect to the RDS instance
 
 ```
@@ -164,9 +167,9 @@ VALUES
 SELECT * FROM mytable;
 ```
 <img width="648" alt="Screenshot 2023-03-18 at 19 39 02" src="https://user-images.githubusercontent.com/104728608/226133818-d640bb59-8741-41b2-a5b9-e01cd89b6837.png">
+</details>
 
-<br><br>
-
+<details markdown=1><summary markdown="span">Create a backup</summary>
 ### 2.6. AWS Backup
 
 <br>
@@ -190,12 +193,15 @@ AWS Protected Resources are a set of AWS resources that have additional security
 <img width="700" alt="Screenshot 2023-03-18 at 20 06 27" src="https://user-images.githubusercontent.com/104728608/226135932-8484b564-7e06-4c0b-8ede-862a10eef0ba.png">
 
 <img width="700" alt="Screenshot 2023-03-18 at 21 06 47" src="https://user-images.githubusercontent.com/104728608/226140139-90bfe15f-52e7-4df7-b3f9-387a02384131.png">
+</details>
 
-
+<details markdown=1><summary markdown="span">Imitate a fallover</summary>
 ### 2.8. Imitate unwanted changes to the database
 
 <img width="680" alt="Screenshot 2023-03-18 at 20 16 17" src="https://user-images.githubusercontent.com/104728608/226136279-ce983fb7-ba57-4e01-91f4-4df8faf93387.png">
+</details>
 
+<details markdown=1><summary markdown="span">Restore the RDS instance with the database</summary>
 ### 2.9. Launch a restore job from the backup vault
 
 <img width="1156" alt="Screenshot 2023-03-18 at 20 20 33" src="https://user-images.githubusercontent.com/104728608/226136672-ac26bcc2-cc98-4fc3-a7d3-c308c3a460a0.png">
@@ -219,6 +225,17 @@ AWS Protected Resources are a set of AWS resources that have additional security
 ### 2.14. Connect to the restored instance and make sure the database in the previous state is available
 
 <img width="825" alt="Screenshot 2023-03-18 at 20 50 43" src="https://user-images.githubusercontent.com/104728608/226138944-68a28a8d-8aaa-4164-910e-11dbdbaf43df.png">
+</details>
+
+
+<br><br>
+
+
+
+
+
+
+
 
 
 
