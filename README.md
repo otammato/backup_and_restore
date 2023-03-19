@@ -1,7 +1,6 @@
 # backup_and_restore
 
 
-
 [ AWS Backup, AWS RDS, AWS EC2, MySQL ] Backup and restore of MySQL database
 
 <br>
@@ -9,6 +8,7 @@
 ## 1. Simple backup and restore with mysqldump
 
 <details markdown=1><summary markdown="span">1.1. Connect to a database</summary>
+
 ### 1.1. Connect to a database
 
 ```
