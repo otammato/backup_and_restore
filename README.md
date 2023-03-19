@@ -83,7 +83,7 @@ mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p t
 
 <br><br><br>
 
-## 2. Production-wise cloud-based backup and restore with AWS Backup
+## 2. Cloud-based backup and restore with AWS Backup
 
 <details markdown=1><summary markdown="span">Create and connect instances</summary>
 
