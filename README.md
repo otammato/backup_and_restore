@@ -5,9 +5,16 @@
 ## 1 
 
 ### 1.1.
-
+### 1.2.
+### 1.3.
+### 1.4.
 
 ## 2
+
+### 2.1.
+### 2.2.
+### 2.3.
+### 2.4.
 
 <img width="1309" alt="Screenshot 2023-03-18 at 18 55 46" src="https://user-images.githubusercontent.com/104728608/226130357-c209ea24-b8f4-4906-ac48-b97c92e6658b.png">
 
