@@ -166,7 +166,7 @@ SELECT * FROM mytable;
 
 ### 2.6. AWS Backup
 
-<br><br>
+<br>
 AWS Backup Vault, AWS Backup Plan, and AWS Protected Resources are all AWS services related to data protection and recovery, but they have different functionalities.
 <br><br>
 AWS Backup Vault is a logical container that allows you to store and manage backups of your AWS resources, such as EC2 instances, RDS databases, and EBS volumes. It provides centralized backup management, retention policies, and access control for multiple resources.
