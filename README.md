@@ -69,6 +69,7 @@ mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p t
 ```
 <img width="991" alt="Screenshot 2023-03-18 at 21 27 56" src="https://user-images.githubusercontent.com/104728608/226141044-9ff29ad3-dec8-409e-aedc-6db5eeb0584b.png">
 
+<br><br>
 ### 1.6. Result
 <img width="978" alt="Screenshot 2023-03-18 at 21 29 22" src="https://user-images.githubusercontent.com/104728608/226141118-d7e43415-5b35-4b7d-9892-6add7b36bfc2.png">
 
