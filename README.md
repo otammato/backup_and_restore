@@ -62,6 +62,10 @@ DELETE FROM mytable WHERE number=0;
 
 ### 1.5. Restore<br>
 Restore the database from the backup file
+
+```
+mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p test_database < backupfile.sql
+```
 <img width="991" alt="Screenshot 2023-03-18 at 21 27 56" src="https://user-images.githubusercontent.com/104728608/226141044-9ff29ad3-dec8-409e-aedc-6db5eeb0584b.png">
 
 ### 1.6. Result
