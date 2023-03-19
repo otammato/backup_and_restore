@@ -13,6 +13,27 @@ mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
 
 ### 1.2. Create a sample table
 
+```
+CREATE TABLE mytable (
+    number TINYINT(1),
+    name VARCHAR(255),
+    surname VARCHAR(255)
+);
+
+INSERT INTO mytable (number, name, surname)
+VALUES 
+(0, 'John', 'Doe'),
+(1, 'Jane', 'Smith'),
+(0, 'Bob', 'Johnson'),
+(1, 'Mary', 'Brown'),
+(0, 'Tom', 'Wilson'),
+(1, 'Emily', 'Davis'),
+(0, 'Mike', 'Jones'),
+(1, 'Sarah', 'Clark'),
+(0, 'Chris', 'Lee'),
+(1, 'Kelly', 'Taylor');
+```
+
 <img width="600" alt="Screenshot 2023-03-19 at 10 52 06" src="https://user-images.githubusercontent.com/104728608/226170561-b26eea6f-7513-4e99-9ee3-2d97d89f9fd9.png">
 
 
