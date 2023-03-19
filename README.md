@@ -2,14 +2,14 @@
 
 [ AWS Backup, AWS RDS, AWS EC2 ] Backup and recovery of an RDS MySQL instance using AWS Backup
 
-## 1 
+## 1 Simple backup with mysqldump
 
 ### 1.1.
 ### 1.2.
 ### 1.3.
 ### 1.4.
 
-## 2
+## 2 Production cloud-based backup with AWS Backup
 
 ### 2.1.
 ### 2.2.
