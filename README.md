@@ -16,7 +16,7 @@
 <img width="1090" alt="Screenshot 2023-03-18 at 21 32 03" src="https://user-images.githubusercontent.com/104728608/226141222-1e8b63d1-e04d-4a00-ac8a-1f0c37a1be62.png">
 
 ### 1.4. Fallover<br> 
-Lets assume that entries with "0" deleted by mistake
+Let's assume that entries with "0" were deleted by mistake
 <img width="719" alt="Screenshot 2023-03-18 at 21 27 01" src="https://user-images.githubusercontent.com/104728608/226141016-1c5923a4-a4be-4739-8b08-47feec5ad507.png">
 
 
