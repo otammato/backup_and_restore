@@ -85,25 +85,25 @@ mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p t
 
 ## 2. Cloud-based backup and restore with AWS Backup
 
-<details markdown=1><summary markdown="span">Create and connect instances</summary>
+<details markdown=1><summary markdown="span">2.1. Create and connect instances</summary>
 
-### 2.1. Create an EC2 instance
+### 2.1.1. Create an EC2 instance
 <img width="700" alt="Screenshot 2023-03-18 at 18 55 46" src="https://user-images.githubusercontent.com/104728608/226130357-c209ea24-b8f4-4906-ac48-b97c92e6658b.png">
 
-### 2.2. Create an RDS instance
+### 2.1.2. Create an RDS instance
 <img width="700" alt="Screenshot 2023-03-18 at 18 54 30" src="https://user-images.githubusercontent.com/104728608/226130291-c479407a-4e05-40c5-bee6-dbd89ee5c16e.png">
 
-### 2.3. Adjust the inbound and outbound rules to provide bi-directional acess for both instances
+### 2.1.3. Adjust the inbound and outbound rules to provide bi-directional acess for both instances
 
 <img width="700" alt="Screenshot 2023-03-18 at 19 02 24" src="https://user-images.githubusercontent.com/104728608/226130726-ceb1f3ac-5e5b-472a-b321-111621ff5175.png">
 
-### 2.4. SSH to an EC2 instance.
+### 2.1.4. SSH to an EC2 instance.
 
 ```
 ssh -i "test_delete.pem" ec2-user@ec2-34-202-234-54.compute-1.amazonaws.com
 ```
 
-### 2.5. Install MariaDB on EC2 (AWS recommends MariaDB which supports both MySQL and Postgres)
+### 2.1.5. Install MariaDB on EC2 (AWS recommends MariaDB which supports both MySQL and Postgres)
 
 ```
 #  this command updates all packages to the latest version
@@ -121,9 +121,9 @@ sudo systemctl start mariadb
 <img width="891" alt="Screenshot 2023-03-18 at 19 16 43" src="https://user-images.githubusercontent.com/104728608/226131747-bae99df2-ce40-4cb1-8420-fd9b1b32be29.png">
 </details>
 
-<details markdown=1><summary markdown="span">Create a database</summary>
+<details markdown=1><summary markdown="span">2.2. Create a database</summary>
 
-### 2.5. Connect to the RDS instance
+### 2.2.1. Connect to the RDS instance
 
 ```
 mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
@@ -132,7 +132,7 @@ mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
 
 <img width="810" alt="Screenshot 2023-03-18 at 19 29 03" src="https://user-images.githubusercontent.com/104728608/226133184-85f44852-bc7b-45bf-bd05-2cb1cb1d76bb.png">
 
-### 2.6. Create a database and switch to it
+### 2.2.2. Create a database and switch to it
 ```
 CREATE DATABASE test_database;
 
@@ -140,7 +140,7 @@ USE test_database;
 ```
 <img width="829" alt="Screenshot 2023-03-18 at 19 32 41" src="https://user-images.githubusercontent.com/104728608/226133577-164aa199-5bd1-4c8f-b687-e604a6406622.png">
 
-### 2.7. Create the table and insert the values
+### 2.2.3. Create the table and insert the values
 
 ```
 CREATE TABLE mytable (
@@ -163,7 +163,7 @@ VALUES
 (1, 'Kelly', 'Taylor');
 ![image](https://user-images.githubusercontent.com/104728608/226133748-cf66866d-ac07-4323-a1f6-035d4ded892f.png)
 ```
-### 2.6. Check the table
+### 2.2.4. Check the table
 
 ```
 SELECT * FROM mytable;
@@ -173,7 +173,7 @@ SELECT * FROM mytable;
 
 <details markdown=1><summary markdown="span">Create a backup</summary>
 
-### 2.6. AWS Backup
+### 2.2.5. AWS Backup
 
 <br>
 AWS Backup Vault, AWS Backup Plan, and AWS Protected Resources are all AWS services related to data protection and recovery, but they have different functionalities.
@@ -185,49 +185,49 @@ AWS Backup Plan is a service that allows you to create and manage backup policie
 AWS Protected Resources are a set of AWS resources that have additional security controls applied to them to protect against accidental or malicious deletion, modification, or encryption. These controls include write protection, deletion protection, and versioning. AWS Protected Resources are available for Amazon S3 buckets and DynamoDB tables.
 <br><br>
 
-### 2.7. This time we create an on-demand backup using AWS Protected Resources, but a backup can be launched on a regular basis using AWS Backup Plan
+### 2.2.6. This time we create an on-demand backup using AWS Protected Resources, but a backup can be launched on a regular basis using AWS Backup Plan
 
 <img width="700" alt="Screenshot 2023-03-18 at 19 47 30" src="https://user-images.githubusercontent.com/104728608/226135255-8f5e4232-9574-4e9a-afb7-155c6ba5fc36.png">
 
 <img width="700" alt="Screenshot 2023-03-18 at 19 51 42" src="https://user-images.githubusercontent.com/104728608/226135261-7be01c6d-58b1-4ef5-9161-6d2c9fb56d60.png">
 
-### 2.7. Make sure the backup job is completed and the backup image created
+### 2.2.7. Make sure the backup job is completed and the backup image created
 
 <img width="700" alt="Screenshot 2023-03-18 at 20 06 27" src="https://user-images.githubusercontent.com/104728608/226135932-8484b564-7e06-4c0b-8ede-862a10eef0ba.png">
 
 <img width="700" alt="Screenshot 2023-03-18 at 21 06 47" src="https://user-images.githubusercontent.com/104728608/226140139-90bfe15f-52e7-4df7-b3f9-387a02384131.png">
 </details>
 
-<details markdown=1><summary markdown="span">Imitate a fallover</summary>
+<details markdown=1><summary markdown="span">2.3. Imitate a fallover</summary>
 
-### 2.8. Imitate unwanted changes to the database
+### 2.3.1. Imitate unwanted changes to the database
 
 <img width="680" alt="Screenshot 2023-03-18 at 20 16 17" src="https://user-images.githubusercontent.com/104728608/226136279-ce983fb7-ba57-4e01-91f4-4df8faf93387.png">
 </details>
 
-<details markdown=1><summary markdown="span">Restore the RDS instance with the database</summary>
+<details markdown=1><summary markdown="span">2.4. Restore the RDS instance with the database</summary>
 
-### 2.9. Launch a restore job from the backup vault
+### 2.4.1. Launch a restore job from the backup vault
 
 <img width="1156" alt="Screenshot 2023-03-18 at 20 20 33" src="https://user-images.githubusercontent.com/104728608/226136672-ac26bcc2-cc98-4fc3-a7d3-c308c3a460a0.png">
 
-### 2.10. At this point you can change some parameters to a database instance
+### 2.4.2. At this point you can change some parameters to a database instance
 
 <img width="814" alt="Screenshot 2023-03-18 at 20 23 58" src="https://user-images.githubusercontent.com/104728608/226136763-0fc0f09a-4e34-43ca-b8a7-81be52134095.png">
 
-### 2.11. Make sure the restore job was completed
+### 2.4.3. Make sure the restore job was completed
 
 <img width="1037" alt="Screenshot 2023-03-18 at 20 36 08" src="https://user-images.githubusercontent.com/104728608/226137699-e90e6c1d-89c4-4350-b108-66829cc1452a.png">
 
-### 2.12. Check the RDS instances. Now two of them are available
+### 2.4.5. Check the RDS instances. Now two of them are available
 
 <img width="1184" alt="Screenshot 2023-03-18 at 20 38 41" src="https://user-images.githubusercontent.com/104728608/226137941-fa06d93f-eb56-4050-8bde-d72ed56486f2.png">
 
-### 2.13. Check the endpoint to connect to the restored instance
+### 2.4.6. Check the endpoint to connect to the restored instance
 
 <img width="1116" alt="Screenshot 2023-03-18 at 20 40 21" src="https://user-images.githubusercontent.com/104728608/226138139-9ab1f7a7-afd5-4074-a7a1-a96d099f5e10.png">
 
-### 2.14. Connect to the restored instance and make sure the database in the previous state is available
+### 2.4.7. Connect to the restored instance and make sure the database in the previous state is available
 
 <img width="825" alt="Screenshot 2023-03-18 at 20 50 43" src="https://user-images.githubusercontent.com/104728608/226138944-68a28a8d-8aaa-4164-910e-11dbdbaf43df.png">
 </details>
