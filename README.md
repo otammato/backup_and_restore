@@ -76,7 +76,7 @@ mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p t
 
 
 <br><br><br>
-## 2 Production cloud-based backup with AWS Backup
+## 2 Production-wise cloud-based backup with AWS Backup
 
 ### 2.1.
 ### 2.2.
