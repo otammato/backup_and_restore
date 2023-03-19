@@ -88,7 +88,7 @@ mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p t
 
 <img width="700" alt="Screenshot 2023-03-18 at 19 02 24" src="https://user-images.githubusercontent.com/104728608/226130726-ceb1f3ac-5e5b-472a-b321-111621ff5175.png">
 
-### 2.4. SSH to an EC2 instances.
+### 2.4. SSH to an EC2 instance.
 
 ```
 ssh -i "test_delete.pem" ec2-user@ec2-34-202-234-54.compute-1.amazonaws.com
@@ -113,17 +113,22 @@ sudo systemctl start mariadb
 
 <img width="910" alt="Screenshot 2023-03-18 at 19 06 54" src="https://user-images.githubusercontent.com/104728608/226131194-63e309e4-9323-4ef8-84d2-94ed8508c5f8.png">
 
+### 2.5. Connect to the RDS instance
+
 ```
 mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
 ```
 <img width="810" alt="Screenshot 2023-03-18 at 19 29 03" src="https://user-images.githubusercontent.com/104728608/226133184-85f44852-bc7b-45bf-bd05-2cb1cb1d76bb.png">
 
+### 2.6. Create a database and switch to it
 ```
 CREATE DATABASE test_database;
 
 USE test_database;
 ```
 <img width="829" alt="Screenshot 2023-03-18 at 19 32 41" src="https://user-images.githubusercontent.com/104728608/226133577-164aa199-5bd1-4c8f-b687-e604a6406622.png">
+
+### 2.7. Create the table and insert the values
 
 ```
 CREATE TABLE mytable (
@@ -146,17 +151,20 @@ VALUES
 (1, 'Kelly', 'Taylor');
 ![image](https://user-images.githubusercontent.com/104728608/226133748-cf66866d-ac07-4323-a1f6-035d4ded892f.png)
 ```
+### 2.6. Check the table
+
 ```
 SELECT * FROM mytable;
 ```
 <img width="648" alt="Screenshot 2023-03-18 at 19 39 02" src="https://user-images.githubusercontent.com/104728608/226133818-d640bb59-8741-41b2-a5b9-e01cd89b6837.png">
+
 <br><br>
 AWS Backup Vault, AWS Backup Plan, and AWS Protected Resources are all AWS services related to data protection and recovery, but they have different functionalities.
-<br>
+<br><br>
 AWS Backup Vault is a logical container that allows you to store and manage backups of your AWS resources, such as EC2 instances, RDS databases, and EBS volumes. It provides centralized backup management, retention policies, and access control for multiple resources.
-<br>
+<br><br>
 AWS Backup Plan is a service that allows you to create and manage backup policies for your AWS resources. It enables you to define backup schedules, retention periods, and backup destinations, including AWS Backup Vaults. AWS Backup Plan also supports cross-region and cross-account backup and provides a centralized dashboard for backup monitoring and management.
-<br>
+<br><br>
 AWS Protected Resources are a set of AWS resources that have additional security controls applied to them to protect against accidental or malicious deletion, modification, or encryption. These controls include write protection, deletion protection, and versioning. AWS Protected Resources are available for Amazon S3 buckets and DynamoDB tables.
 <br><br>
 
