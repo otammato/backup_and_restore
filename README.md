@@ -8,6 +8,10 @@
 <img width="600" alt="Screenshot 2023-03-19 at 10 48 00" src="https://user-images.githubusercontent.com/104728608/226170408-0dd573a5-d621-4a3a-9427-36cfdaaac293.png">
 
 ### 1.2.
+
+<img width="600" alt="Screenshot 2023-03-19 at 10 52 06" src="https://user-images.githubusercontent.com/104728608/226170561-b26eea6f-7513-4e99-9ee3-2d97d89f9fd9.png">
+
+
 ### 1.3.
 ### 1.4.
 <img width="844" alt="Screenshot 2023-03-18 at 21 24 50" src="https://user-images.githubusercontent.com/104728608/226140843-3d74545a-a5f8-4bde-bef7-91ad3e9eb9ca.png">
