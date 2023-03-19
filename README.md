@@ -5,7 +5,7 @@
 ## 1 Simple backup with mysqldump
 
 ### 1.1.
-<img width="700" alt="Screenshot 2023-03-19 at 10 48 00" src="https://user-images.githubusercontent.com/104728608/226170408-0dd573a5-d621-4a3a-9427-36cfdaaac293.png">
+<img width="600" alt="Screenshot 2023-03-19 at 10 48 00" src="https://user-images.githubusercontent.com/104728608/226170408-0dd573a5-d621-4a3a-9427-36cfdaaac293.png">
 
 ### 1.2.
 ### 1.3.
