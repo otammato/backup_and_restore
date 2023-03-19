@@ -185,7 +185,7 @@ AWS Protected Resources are a set of AWS resources that have additional security
 <img width="700" alt="Screenshot 2023-03-18 at 21 06 47" src="https://user-images.githubusercontent.com/104728608/226140139-90bfe15f-52e7-4df7-b3f9-387a02384131.png">
 
 
-### 2.8. Imitate unwanted changes
+### 2.8. Imitate unwanted changes to the database
 
 <img width="680" alt="Screenshot 2023-03-18 at 20 16 17" src="https://user-images.githubusercontent.com/104728608/226136279-ce983fb7-ba57-4e01-91f4-4df8faf93387.png">
 
@@ -193,11 +193,15 @@ AWS Protected Resources are a set of AWS resources that have additional security
 
 <img width="1156" alt="Screenshot 2023-03-18 at 20 20 33" src="https://user-images.githubusercontent.com/104728608/226136672-ac26bcc2-cc98-4fc3-a7d3-c308c3a460a0.png">
 
+### 2.10. At this point you can change some parameters to a database instance
+
 <img width="814" alt="Screenshot 2023-03-18 at 20 23 58" src="https://user-images.githubusercontent.com/104728608/226136763-0fc0f09a-4e34-43ca-b8a7-81be52134095.png">
+
+<img width="1037" alt="Screenshot 2023-03-18 at 20 36 08" src="https://user-images.githubusercontent.com/104728608/226137699-e90e6c1d-89c4-4350-b108-66829cc1452a.png">
 
 <img width="1139" alt="Screenshot 2023-03-18 at 20 34 12" src="https://user-images.githubusercontent.com/104728608/226137329-83f91da2-d227-44f7-a9e1-7e6b14aa7fa6.png">
 
-<img width="1037" alt="Screenshot 2023-03-18 at 20 36 08" src="https://user-images.githubusercontent.com/104728608/226137699-e90e6c1d-89c4-4350-b108-66829cc1452a.png">
+
 
 <img width="1184" alt="Screenshot 2023-03-18 at 20 38 41" src="https://user-images.githubusercontent.com/104728608/226137941-fa06d93f-eb56-4050-8bde-d72ed56486f2.png">
 
