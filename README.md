@@ -121,7 +121,7 @@ sudo systemctl start mariadb
 <img width="891" alt="Screenshot 2023-03-18 at 19 16 43" src="https://user-images.githubusercontent.com/104728608/226131747-bae99df2-ce40-4cb1-8420-fd9b1b32be29.png">
 </details>
 
-<details markdown=1><summary markdown="span">2.2. Create a database</summary>
+<details markdown=1><summary markdown="span">2.2. Create a database and a table</summary>
 
 ### 2.2.1. Connect to the RDS instance
 
