@@ -104,11 +104,11 @@ mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p t
 
 </details>
 
-<br><br>
+<br>
 
 ---
 
-<br><br>
+<br>
 
 ## 2. Cloud-based backup and restore with AWS Backup
 
