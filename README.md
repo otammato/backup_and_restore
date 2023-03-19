@@ -140,7 +140,7 @@ USE test_database;
 ```
 <img width="829" alt="Screenshot 2023-03-18 at 19 32 41" src="https://user-images.githubusercontent.com/104728608/226133577-164aa199-5bd1-4c8f-b687-e604a6406622.png">
 
-### 2.2.3. Create the table and insert the values
+### 2.2.3. Create the table and insert values
 
 ```
 CREATE TABLE mytable (
