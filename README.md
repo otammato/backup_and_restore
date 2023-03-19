@@ -4,7 +4,7 @@
 
 ## 1. Simple backup and restore with mysqldump
 
-### 1.1. Connect to a database through endpoint
+### 1.1. Connect to a database
 
 ```
 mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
