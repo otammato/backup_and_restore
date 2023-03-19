@@ -2,7 +2,7 @@
 
 <br><br>
 
-[ AWS Backup, AWS RDS, AWS EC2, MySQL ] Backup and restore of MySQL database
+[ AWS Backup, AWS RDS, AWS EC2, MySQL ] Backup and restore of MySQL database / an RDS instance
 
 <br>
 
