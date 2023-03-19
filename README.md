@@ -8,6 +8,7 @@
 
 ## 1. Simple backup and restore with mysqldump
 
+<details markdown=1><summary markdown="span">1.1. Connect to a database</summary>
 ### 1.1. Connect to a database
 
 ```
@@ -16,6 +17,11 @@ mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
 <img width="600" alt="Screenshot 2023-03-19 at 10 48 00" src="https://user-images.githubusercontent.com/104728608/226170408-0dd573a5-d621-4a3a-9427-36cfdaaac293.png">
 
 <br><br>
+
+</details>
+
+<details markdown=1><summary markdown="span">1.2. Create a sample table</summary>
+
 ### 1.2. Create a sample table
 
 ```
@@ -43,15 +49,24 @@ VALUES
 
 <br><br>
 
+</details>
+
+<details markdown=1><summary markdown="span">1.3. Create a backup file with mysqldump command</summary>
+
 ### 1.3. Create a backup file with mysqldump command
 
 ```
 mysqldump -h restored-db-instance.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin test_database mytable -p > backupfile.sql
 ```
 
+
 <img width="1090" alt="Screenshot 2023-03-18 at 21 32 03" src="https://user-images.githubusercontent.com/104728608/226141222-1e8b63d1-e04d-4a00-ac8a-1f0c37a1be62.png">
 
 <br><br>
+
+</details>
+
+<details markdown=1><summary markdown="span">1.4. Imitate a fallover</summary>
 
 ### 1.4. Imitate a fallover<br> 
 Let's assume that entries with "0" were deleted or table dropped by mistake
@@ -65,6 +80,10 @@ DROP TABLE mytable;
 
 <br><br>
 
+</details>
+
+<details markdown=1><summary markdown="span">1.5. Restore</summary>
+
 ### 1.5. Restore<br>
 Restore the database from the backup file
 
@@ -74,8 +93,15 @@ mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p t
 <img width="991" alt="Screenshot 2023-03-18 at 21 27 56" src="https://user-images.githubusercontent.com/104728608/226141044-9ff29ad3-dec8-409e-aedc-6db5eeb0584b.png">
 
 <br><br>
+
+</details>
+
+<details markdown=1><summary markdown="span">1.6. Result</summary>
+
 ### 1.6. Result
 <img width="978" alt="Screenshot 2023-03-18 at 21 29 22" src="https://user-images.githubusercontent.com/104728608/226141118-d7e43415-5b35-4b7d-9892-6add7b36bfc2.png">
+
+</details>
 
 <br><br><br>
 
