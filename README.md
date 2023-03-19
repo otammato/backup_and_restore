@@ -172,15 +172,15 @@ AWS Protected Resources are a set of AWS resources that have additional security
 
 ### 2.7. This time we create an on-demand backup using AWS Protected Resources, but a backup can be launched on a regular basis using AWS Backup Plan
 
-<img width="1151" alt="Screenshot 2023-03-18 at 19 47 30" src="https://user-images.githubusercontent.com/104728608/226135255-8f5e4232-9574-4e9a-afb7-155c6ba5fc36.png">
+<img width="700" alt="Screenshot 2023-03-18 at 19 47 30" src="https://user-images.githubusercontent.com/104728608/226135255-8f5e4232-9574-4e9a-afb7-155c6ba5fc36.png">
 
-<img width="715" alt="Screenshot 2023-03-18 at 19 51 42" src="https://user-images.githubusercontent.com/104728608/226135261-7be01c6d-58b1-4ef5-9161-6d2c9fb56d60.png">
+<img width="700" alt="Screenshot 2023-03-18 at 19 51 42" src="https://user-images.githubusercontent.com/104728608/226135261-7be01c6d-58b1-4ef5-9161-6d2c9fb56d60.png">
 
-<img width="1184" alt="Screenshot 2023-03-18 at 21 06 47" src="https://user-images.githubusercontent.com/104728608/226140139-90bfe15f-52e7-4df7-b3f9-387a02384131.png">
+<img width="700" alt="Screenshot 2023-03-18 at 21 06 47" src="https://user-images.githubusercontent.com/104728608/226140139-90bfe15f-52e7-4df7-b3f9-387a02384131.png">
 
 
 
-<img width="1133" alt="Screenshot 2023-03-18 at 20 06 27" src="https://user-images.githubusercontent.com/104728608/226135932-8484b564-7e06-4c0b-8ede-862a10eef0ba.png">
+<img width="700" alt="Screenshot 2023-03-18 at 20 06 27" src="https://user-images.githubusercontent.com/104728608/226135932-8484b564-7e06-4c0b-8ede-862a10eef0ba.png">
 
 
 
