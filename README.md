@@ -51,7 +51,7 @@ mysqldump -h restored-db-instance.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u ad
 
 <br><br>
 
-### 1.4. Fallover<br> 
+### 1.4. Imitate a fallover<br> 
 Let's assume that entries with "0" were deleted or table dropped by mistake
 
 ```
