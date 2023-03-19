@@ -19,10 +19,10 @@
 <img width="719" alt="Screenshot 2023-03-18 at 21 27 01" src="https://user-images.githubusercontent.com/104728608/226141016-1c5923a4-a4be-4739-8b08-47feec5ad507.png">
 
 
-### 1.5.
+### 1.5. Restore
 <img width="991" alt="Screenshot 2023-03-18 at 21 27 56" src="https://user-images.githubusercontent.com/104728608/226141044-9ff29ad3-dec8-409e-aedc-6db5eeb0584b.png">
 
-### 1.6.
+### 1.6. Result
 <img width="978" alt="Screenshot 2023-03-18 at 21 29 22" src="https://user-images.githubusercontent.com/104728608/226141118-d7e43415-5b35-4b7d-9892-6add7b36bfc2.png">
 
 <img width="815" alt="Screenshot 2023-03-18 at 21 25 56" src="https://user-images.githubusercontent.com/104728608/226140908-f864005b-8929-42b9-aa8b-e367ea4324cb.png">
