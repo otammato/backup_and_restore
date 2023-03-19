@@ -1,6 +1,6 @@
 # backup_rds
 
-[ AWS Backup, AWS RDS, AWS EC2 ] Backup and recovery of an RDS MySQL instance 
+[ AWS Backup, AWS RDS, AWS EC2, MySQL ] Backup and recovery of an RDS MySQL instance 
 
 <br>
 
