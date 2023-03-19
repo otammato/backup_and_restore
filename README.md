@@ -217,51 +217,6 @@ AWS Protected Resources are a set of AWS resources that have additional security
 
 
 
-```
-mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
-clear
-mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
-mysql -h restored-db-instance.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
-clear
-mysql -h restored-db-instance.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
-mysqldump -h restored-db-instance.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin test_database mytable -p > backupfile.sql
-ls vi backupfile.sql
-mysql -h restored-db-instance.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin test_database mytable -p < backupfile.sql
- mysql -h restored-db-instance.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p test_database < backupfile.sql
- mysql -h restored-db-instance.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
- mysql -h restored-db-instance.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p test_database < backupfile.sql
- mysql -h restored-db-instance.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
- clear
- mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
- mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p test_database < backupfile.sql
- mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
- clear
- mysqldump -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin test_database mytable -p > backupfile.sql
- mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p test_database < backupfile.sql
- clear
- mysqldump -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin test_database mytable -p > backupfile.sql
- mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p test_database < backupfile.sql
- mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
- mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p test_database < backupfile.sql
- mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
- ls
- vi backupfile.sql
- rm backupfile.sql
- mysqldump -h restored-db-instance.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin test_database mytable -p > backupfile.sql
- ls
- clear
- mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p test_database < backupfile.sql
- mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
- clear
- mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p test_database < backupfile.sql
- mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p
- clear
- mysqldump -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin test_database mytable -p > backupfile.sql
- ls
- history
- history | awk '{$1=""; print $0}'
-```
-
 
 
 
