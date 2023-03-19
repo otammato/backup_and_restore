@@ -1,6 +1,6 @@
 # Reliability pillar of the well-architected approach. Backup and restore.
 
-<br>
+<br><br>
 
 [ AWS Backup, AWS RDS, AWS EC2, MySQL ] Backup and restore of MySQL database
 
