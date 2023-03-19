@@ -1,5 +1,8 @@
 # backup_and_restore
 
+<details markdown=1><summary markdown="span">Script</summary>
+</details>
+
 [ AWS Backup, AWS RDS, AWS EC2, MySQL ] Backup and restore of MySQL database
 
 <br>
