@@ -110,7 +110,7 @@ mysql -h backup-tester-db.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u admin -p t
 
 <br>
 
-## 2. Cloud-based backup and restore with AWS Backup
+## 2. Cloud-based backup and restore of the RDS instance with AWS Backup
 
 <details markdown=1><summary markdown="span"> 2.1. Create and connect instances</summary>
 
