@@ -69,7 +69,7 @@ mysqldump -h restored-db-instance.c9rglxpvlls0.us-east-1.rds.amazonaws.com -u ad
 
 <details markdown=1><summary markdown="span">1.4. Imitate a fallover</summary>
 
-### 1.4.1. Imitate a fallover<br> 
+### 1.4.1. Imitate a failure<br> 
 Let's assume that entries with "0" were deleted or table dropped by mistake
 
 ```
@@ -225,7 +225,7 @@ AWS Protected Resources are a set of AWS resources that have additional security
 <img width="700" alt="Screenshot 2023-03-18 at 21 06 47" src="https://user-images.githubusercontent.com/104728608/226140139-90bfe15f-52e7-4df7-b3f9-387a02384131.png">
 </details>
 
-<details markdown=1><summary markdown="span">2.4. Imitate a fallover</summary>
+<details markdown=1><summary markdown="span">2.4. Imitate a failure</summary>
 
 ### 2.4.1. Imitate unwanted changes to the database
 
