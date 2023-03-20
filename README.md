@@ -1,4 +1,4 @@
-# Reliability pillar of the well-architected approach. Disaster recovery. Backup and restore.
+# Disaster recovery. Backup and restore.
 
 <br><br>
 
