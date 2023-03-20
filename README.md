@@ -1,4 +1,4 @@
-# Disaster recovery. Backup and restore.
+# DB disaster recovery. Backup and restore.
 
 <br><br>
 
